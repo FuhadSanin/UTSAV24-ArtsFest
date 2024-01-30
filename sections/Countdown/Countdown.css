@@ -1,0 +1,39 @@
+.Countdown {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/Countdown.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctd {
+    display: flex;
+    align-items: center;
+}
+
+.ctd-cont {
+    background-color: #F3D9B4;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    border-radius: 20px;
+    padding: 5px;
+    color: #EC1B92;
+}
+
+.ctd-p {
+    font-size: 8vw;
+}
+
+.ctd-colon {
+    font-size: 10vw;
+    color: #EC1B92;
+}

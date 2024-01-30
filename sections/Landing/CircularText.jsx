@@ -1,27 +1,30 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import "./CircularText.css"
 
 const CircularText = () => {
+  const [chars, setChars] = useState([]);
+
   useEffect(() => {
-    const text = document.querySelector(".circular-text h1")
-    const innerText = text.innerHTML
-    text.innerHTML = innerText
-      .split("")
-      .map(
-        (char, i) =>
-          `<span style="transform:rotate(${
-            (360 / innerText.length) * i
-          }deg)">${char}</span>`
-      )
-      .join("")
-  }, [])
+    const text = "Feb-28-Mar-1-Mar-2-";
+    setChars(text.split(""));
+  }, []);
+
   return (
     <div className="circle">
       <div className="circular-text">
-        <h1>Feb-28-Mar-1-Mar-2-</h1>
+        <h1>
+          {chars.map((char, i) => (
+            <span
+              key={i}
+              style={{ transform: `rotate(${(360 / chars.length) * i}deg)` }}
+            >
+              {char}
+            </span>
+          ))}
+        </h1>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CircularText
+export default CircularText;

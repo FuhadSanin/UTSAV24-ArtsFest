@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   color: #FFF3E2;
+  overflow: hidden;
 }
 
 .circular-text {
@@ -14,12 +15,13 @@
   height: 100%;
   position: absolute;
   animation: anim 10s linear infinite;
+  overflow: hidden;
 }
 
 .circular-text h1 {
   margin: 0;
   padding: 0;
-  font-size: 1px; /* Adjust font size as needed */
+  font-size: 3px; /* Adjust font size as needed */
 }
 
 .circular-text h1 span {

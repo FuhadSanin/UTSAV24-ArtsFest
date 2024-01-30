@@ -33,7 +33,55 @@
     font-size: 8vw;
 }
 
+.ctd-cont-p {
+    font-size: 1.5vw;
+}
+
 .ctd-colon {
     font-size: 10vw;
     color: #EC1B92;
+}
+
+@media screen and (max-width: 768px) {
+    .Countdown {
+        height: 50vh;
+    }
+    .ctd-cont {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Countdown {
+        height: 50vh;
+    }
+    .ctd-cont {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Countdown {
+        height: 40vh;
+    }
+    .ctd-cont {
+        height: 80px;
+        width: 80px;
+    }
+
+    .ctd-cont-p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Countdown {
+        height: 30vh;
+    }
+    .ctd-cont {
+        height: 60px;
+        width: 60px;
+    }
 }

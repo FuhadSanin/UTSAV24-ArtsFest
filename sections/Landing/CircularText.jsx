@@ -5,7 +5,7 @@ const CircularText = () => {
   const [chars, setChars] = useState([]);
 
   useEffect(() => {
-    const text = "Feb-28-Mar-1-Mar-2-";
+    const text = "---UTSAV---2024";
     setChars(text.split(""));
   }, []);
 

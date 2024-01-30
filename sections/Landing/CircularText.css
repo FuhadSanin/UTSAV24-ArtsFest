@@ -1,7 +1,7 @@
 .circle {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -18,17 +18,10 @@
   overflow: hidden;
 }
 
-.circular-text h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 3px; /* Adjust font size as needed */
-}
-
 .circular-text h1 span {
   position: absolute;
-  left: 50%;
   font-size: 1.2rem;
-  transform-origin: 0 78px;
+  transform-origin: 0 80px;
 }
 
 @keyframes anim {

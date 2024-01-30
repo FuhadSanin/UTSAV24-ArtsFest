@@ -40,11 +40,9 @@ const Landing = () => {
     const textElement = document.querySelector(".text h1")
 
     // Adjust the scaleFactor and other values as needed
-    const scaleFactor = 1 + scrollValue / 5000
-    const newSize = `${13 * scaleFactor}rem`
+    const scaleFactor = 1 + scrollValue / 4000
 
     textElement.style.transform = `scale(${scaleFactor})`
-    textElement.style.fontSize = newSize
   }
 
   useEffect(() => {
@@ -57,9 +55,9 @@ const Landing = () => {
 
   return (
     <div id="Landing">
-      <div className="circular-ring">
+      {/* <div className="circular-ring">
         <CircularText />
-      </div>
+      </div> */}
       <div className="text">
         <h1 ref={textRef}></h1>
       </div>

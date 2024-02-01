@@ -39,7 +39,7 @@
   .text h1 {
     font-size: 20vw;
   }
-} 
+}
 
 @media only screen and (max-width: 800px) {
   #Landing {
@@ -58,5 +58,3 @@
     font-size: 15vw;
   }
 }
-
-

@@ -2,6 +2,7 @@ import react from "react"
 import "./App.css"
 import { Landing, Events } from "../sections"
 import Countdown from "../sections/Countdown/Countdown"
+import Registration from "../sections/Registration/Registration"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Landing />
       <Countdown />
       <Events />
+      <Registration />
     </>
   )
 }

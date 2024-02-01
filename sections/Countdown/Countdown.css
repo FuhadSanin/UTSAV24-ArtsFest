@@ -1,0 +1,89 @@
+.Countdown {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/Countdown.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctd {
+    display: flex;
+    align-items: center;
+}
+
+.ctd-cont {
+    background-color: #F3D9B4;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    border-radius: 20px;
+    padding: 5px;
+    color: #EC1B92;
+    overflow: hidden;
+}
+
+.ctd-p {
+    font-size: 8vw;
+    overflow: hidden;
+}
+
+.ctd-cont-p {
+    font-size: 1.5vw;
+}
+
+.ctd-colon {
+    font-size: 10vw;
+    color: #EC1B92;
+}
+
+@media screen and (max-width: 768px) {
+    .Countdown {
+        height: 50vh;
+    }
+    .ctd-cont {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Countdown {
+        height: 50vh;
+    }
+    .ctd-cont {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Countdown {
+        height: 40vh;
+    }
+    .ctd-cont {
+        height: 80px;
+        width: 80px;
+    }
+
+    .ctd-cont-p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Countdown {
+        height: 30vh;
+    }
+    .ctd-cont {
+        height: 60px;
+        width: 60px;
+    }
+}

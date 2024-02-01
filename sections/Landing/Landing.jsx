@@ -40,7 +40,7 @@ const Landing = () => {
     const textElement = document.querySelector(".text h1")
 
     // Adjust the scaleFactor and other values as needed
-    const scaleFactor = 1 + scrollValue / 4000
+    const scaleFactor = 1 + scrollValue / 1500
 
     textElement.style.transform = `scale(${scaleFactor})`
   }

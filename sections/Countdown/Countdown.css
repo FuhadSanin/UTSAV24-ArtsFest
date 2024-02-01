@@ -27,10 +27,12 @@
     border-radius: 20px;
     padding: 5px;
     color: #EC1B92;
+    overflow: hidden;
 }
 
 .ctd-p {
     font-size: 8vw;
+    overflow: hidden;
 }
 
 .ctd-cont-p {

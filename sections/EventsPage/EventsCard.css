@@ -1,0 +1,152 @@
+
+
+#EventsCard0 {
+  position: relative;
+  height: 24rem; 
+  width: 18rem; 
+  border-radius: 0.75rem;
+ 
+}
+
+#EventsCard1 {
+  width: fit-content;
+  min-width: 250px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../../images/Maskgroup.svg);
+  background-color: #ea4fa7  ;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow:5px 5px 0px #131313 ;
+  position: relative;
+}
+
+#EventsCard2 {
+  width: fit-content;
+  min-width: 250px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../../images/MaskGroup.svg);
+  background-color: #FFF3E2  ;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #EC1B92;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow:5px 5px 0px #131313;
+  position: relative;
+}
+
+.EventsCard-Container0 {
+  width: fit-content;
+  min-width: 250px;
+  height: 40vh;
+  position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    display: grid;
+    place-content: center;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(../../images/MaskGroup.svg);
+    background-color: #EC1B92  ;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #131313;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow:5px 5px 0px #131313;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.EventsCard-Container1 {
+  width: fit-content;
+  min-width: 250px;
+  height: 40vh;
+  position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    display: grid;
+    place-content: center;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(../../images/Maskgroup.png);
+    background-color: #FFF3E2  ;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #EC1B92;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow:5px 5px 0px #131313;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.EventsCard-Container2 {
+  width: fit-content;
+  min-width: 250px;
+  height: 40vh;
+  position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    display: grid;
+    place-content: center;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(../../images/MaskGroup.svg);
+    
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #EC1B92;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow:5px 5px 0px #131313;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.EventsCard-Title-Container {
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  font-size: 7vh; 
+  width: 70%;
+  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032;
+}
+
+
+

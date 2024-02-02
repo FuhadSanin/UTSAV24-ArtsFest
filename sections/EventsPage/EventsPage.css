@@ -2,11 +2,27 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    column-gap: 15px;
-    background-image: url(../../images/bg.png);
+    
+    background-color: #F79F1E;
     overflow: hidden;
+    padding-top:10vh;
+  }
+
+  .EventsCards-Container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding-top:20vh;
+    padding-top:10vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .Event-Heading{
+    color: #fff;
+    font-size: 15vh;
+    
   }

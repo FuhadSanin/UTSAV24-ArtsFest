@@ -90,14 +90,19 @@ function EventsPage() {
 
     return (
         <div className="EventsPage" >
-            {openEventsSorted.map(item => (
-                <EventsCard key={item.title} {...item} />
-            ))}
 
-            {closedEventsSorted.map(item => (
-                <EventsCard key={item.title} {...item} />
-            ))}
 
+            <div className='Event-Heading'>Events</div>
+            <div className='EventsCards-Container'>
+                {openEventsSorted.map(item => (
+                    <EventsCard key={item.title} {...item} />
+                ))}
+
+                {closedEventsSorted.map(item => (
+                    <EventsCard key={item.title} {...item} />
+                ))}
+
+            </div>
         </div >
     )
 }

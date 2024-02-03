@@ -51,61 +51,104 @@ const EventsCard = (props) => {
   return (
 
 
-    <motion.div
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{
-        rotateY,
-        rotateX,
-        transformStyle: "preserve-3d",
-      }} id="EventsCard0"
-    >
-      {props.id % 3 === 0 && (
-        <div className="EventsCard-Container0"
-          style={{
-            transform: "translateZ(75px)",
-            transformStyle: "preserve-3d",
-          }}>
-          <div className="EventsCard-Title-Container"
-            style={{
-              transform: "translateZ(75px)",
-            }}>
-            {props.title}</div>
+    // <motion.div
+    //   onMouseMove={handleMouseMove}
+    //   onMouseLeave={handleMouseLeave}
+    //   style={{
+    //     rotateY,
+    //     rotateX,
+    //     transformStyle: "preserve-3d",
+    //   }} id="EventsCard0"
+    // >
+    //   {props.id % 3 === 0 && (
+    //     <div className="EventsCard-Container0"
+    //       style={{
+    //         transform: "translateZ(75px)",
+    //         transformStyle: "preserve-3d",
+    //       }}>
+    //       <div className="EventsCard-Title-Container"
+    //       >
+    //         {props.title}</div>
+    //     </div>
+    //   )}
+    //   {
+    //     props.id % 3 === 1 && (
+    //       <div className="EventsCard-Container1"
+    //         style={{
+    //           transform: "translateZ(75px)",
+    //           transformStyle: "preserve-3d",
+    //         }}>
+    //         <div className="EventsCard-Title-Container"
+
+    //         >
+    //           {props.title}</div>
+    //       </div>
+    //     )
+    //   }
+    //   {
+    //     props.id % 3 === 2 && (
+    //       <div className="EventsCard-Container2"
+    //         style={{
+    //           transform: "translateZ(75px)",
+    //           transformStyle: "preserve-3d",
+    //         }}>
+    //         <div className="EventsCard-Title-Container"
+    //         >
+    //           {props.title}</div>
+    //       </div>
+    //     )
+    //   }
+
+    // </motion.div >
+    <div className="view">
+
+      {props.id % 3 == 0 && (
+        <div className="group">
+          < div className="EventsCard">
+            < div className="EventsCard0">
+              <div className="EventsCard-Title-Container">
+                {props.title}
+              </div>
+            </div>
+          </div >
+          <div className="BackCard"></div>
         </div>
-      )}
-      {
-        props.id % 3 === 1 && (
-          <div className="EventsCard-Container1"
-            style={{
-              transform: "translateZ(75px)",
-              transformStyle: "preserve-3d",
-            }}>
-            <div className="EventsCard-Title-Container"
-              style={{
-                transform: "translateZ(75px)",
-              }}>
-              {props.title}</div>
-          </div>
-        )
+      )
       }
+
       {
-        props.id % 3 === 2 && (
-          <div className="EventsCard-Container2"
-            style={{
-              transform: "translateZ(75px)",
-              transformStyle: "preserve-3d",
-            }}>
-            <div className="EventsCard-Title-Container"
-              style={{
-                transform: "translateZ(75px)",
-              }}>
-              {props.title}</div>
-          </div>
+        props.id % 3 == 1 && (
+          <div className="group">
+            < div className="EventsCard">
+              < div className="EventsCard1">
+                <div className="EventsCard-Title-Container">
+                  {props.title}
+                </div>
+              </div>
+            </div >
+            <div className="BackCard"></div>
+          </div >
         )
       }
 
-    </motion.div >
+      {
+        props.id % 3 == 2 && (
+          <div className="group">
+            < div className="EventsCard">
+              < div className="EventsCard2">
+                <div className="EventsCard-Title-Container">
+                  {props.title}
+                </div>
+              </div>
+            </div >
+            <div className="BackCard"></div>
+          </div >
+        )
+      }
 
+
+
+    </div >
 
   );
 };

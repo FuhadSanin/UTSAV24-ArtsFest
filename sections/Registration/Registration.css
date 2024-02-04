@@ -49,10 +49,52 @@
     font-size: large;
     
 }
-.Registration-Rightside{
+.Registration-RightSide{
     display:flex;
-    
     justify-content: center;
     align-items: center;
 
+}
+
+@media (max-width:1050px)
+{
+    .Registration-RightSide{
+        width: 40%;
+    }
+}
+@media (max-width:900px) {
+    .Registration-EventDesc{
+        font-size: medium;
+    }
+    .Registration-EventLink{
+        padding: 10px 20px;
+        font-size: medium;
+    }
+}
+@media (max-width:650px)
+{
+    .Registration-glass-container{
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Registration-leftside{
+        width: 80%;
+        padding-top: 25px;
+
+        gap: 20px;
+    }
+    .Registration-RightSide{
+        width: 50%;
+
+    }
+}
+@media (max-width:390px) {
+    .Registration-leftside{
+        padding: 25px;
+    }
 }

@@ -40,10 +40,10 @@ function Registration()
                 <div className='Registration-leftside'>
                     <h1 className='Registration-Eventname'>{EventName}</h1>
                     <p className='Registration-EventDesc'>{EventDetails}</p>
-                    <a href="" className='Registration-EventLink'>{RegisterLink}</a>
+                    <a href={RegisterLink} className='Registration-EventLink'>Register</a>
                 </div>
                 <div className='Registration-RightSide'>
-                    <img src="../../images/Mask group.png" alt="" />
+                    <img src="../../images/Mask group.png" alt="" className='Registeration-Image'/>
                 </div>
             </div>
         </div>

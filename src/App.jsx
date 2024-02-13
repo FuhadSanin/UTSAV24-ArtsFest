@@ -19,8 +19,9 @@ function App() {
         <Navbar />
         <Landing />
         <Countdown />
-          <Team />
+        <Team />
         <Events />
+        <Scoreboard />
         {/* <Registration /> */}
 
 

@@ -6,10 +6,12 @@ import EventsCard from "../sections/EventsPage/EventsCard"
 import Countdown from "../sections/Countdown/Countdown"
 import Registration from "../sections/Registration/Registration"
 import Navbar from "../sections/Navbar/Navbar"
-import { BrowserRouter,Route,Routes } from "react-router-dom"
 import Scoreboard from "../sections/Scoreboard/Scoreboard"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Team from "../sections/Team/Team"
 
 function App() {
+
   return (
     <BrowserRouter>
     <Routes>
@@ -17,15 +19,16 @@ function App() {
         <Navbar />
         <Landing />
         <Countdown />
+          <Team />
         <Events />
         {/* <Registration /> */}
-        <Scoreboard />
 
-      
-      </>}></Route>
-      <Route path="/events" element={<EventsPage />}></Route>
-      <Route path="/events/:name" element={<Registration/>}></Route>
-    </Routes>
+
+
+        </>}></Route>
+        <Route path="/events" element={<EventsPage />}></Route>
+        <Route path="/events/:name" element={<Registration />}></Route>
+      </Routes>
     </BrowserRouter>
     // <>
 

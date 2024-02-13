@@ -71,7 +71,9 @@ function Events() {
 
   return (
     <div className='EventsSection'>
-      <div className='carousel' ref={carouselRef} onWheel={handleWheel}>
+      <div className='EventHeading'>Events</div>
+      <div className='carousel' >
+        <div className='scrollcontrol' ref={carouselRef} onWheel={handleWheel}></div>
         <div className='ring' ref={ringRef}>
           {newList.map((element, index) => (
             <div key={index} className={`slide${index + 1} ${activeSlide === index + 1 ? 'active' : ''}`}>

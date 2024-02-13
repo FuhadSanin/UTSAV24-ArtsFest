@@ -111,7 +111,10 @@ const EventsCard = (props) => {
               </div>
             </div>
           </div >
-          <div className="BackCard"></div>
+          <div className="BackCard">
+
+          </div >
+
         </div>
       )
       }
@@ -126,7 +129,10 @@ const EventsCard = (props) => {
                 </div>
               </div>
             </div >
-            <div className="BackCard"></div>
+            <div className="BackCard">
+
+
+            </div>
           </div >
         )
       }
@@ -141,7 +147,9 @@ const EventsCard = (props) => {
                 </div>
               </div>
             </div >
-            <div className="BackCard"></div>
+            <div className="BackCard">
+
+            </div>
           </div >
         )
       }

@@ -1,7 +1,192 @@
-#Events {
+.EventsSection {
   width: 100%;
   height: 100vh;
-  background-color: #f5793b;
-  background-image: url('../../images/EventsBg2.png');
+  background-color: chocolate;
+  background-image: url("../../images/Yellowpattern1.svg");
+  overflow: hidden;
+  position: relative;
 }
 
+.EventHeading{
+  text-shadow: 5px 0 #000000, -2px 0 #000000, 0 2px #080808, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #060606, -1px 1px #fff;
+
+ color: #ff8903;
+  font-size: 20vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  overflow: hidden;
+
+}
+
+.scrollcontrol{
+  height: 40%;
+  width: 70%;
+  position:absolute;
+  bottom: 0;
+
+}
+
+.ring {
+  height: 70vh;
+  width: 70vh;
+  border: 10px solid black;
+  border-radius: 100%;
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+  overflow: visible;
+  bottom: -40%;
+  transition: all 1s; /* Changed from rotation to transform */
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4, 
+.slide5, 
+.slide6, 
+.slide7, 
+.slide8 {
+  
+  width: fit-content;
+  min-width: 250px;
+  height: 40vh;
+  position: absolute;
+  border-radius: 10px;
+
+  background-image: url(../../images/Maskgroup.png);
+  background-color: #FFF3E2  ;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 20;
+
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 7vh; 
+  
+}
+
+.slide1 {
+  top: -70%;
+  right: 25%;
+  transform: rotate(0deg); 
+
+}
+
+.slide2 {
+  top: -50%;
+  right: -45%;
+  transform: rotate(45deg); 
+
+}
+
+.slide3 {
+  top: 15%;
+  right: -70%;
+  transform: rotate(90deg); 
+}
+
+.slide4 {
+  bottom: -50%;
+  right: -45%;
+  transform: rotate(135deg);
+}
+
+
+.slide5 {
+  bottom: -70%;
+  right: 25%;
+  transform: rotate(180deg);
+}
+
+.slide6 {
+  bottom: -50%;
+  left: -45%;
+  transform: rotate(225deg);
+}
+
+.slide7 {
+  top: 15%;
+  left: -70%;
+  transform: rotate(270deg);
+}
+
+.slide8 {
+  top: -50%;
+  left: -45%;
+  transform: rotate(315deg); 
+}
+
+
+
+
+/* @media (max-width: 768px){
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4, 
+  .slide5, 
+  .slide6, 
+  .slide7, 
+  .slide8 {
+    
+    width: fit-content;
+    min-width: 200px;
+    height: 35vh;
+    position: absolute;
+    border-radius: 10px;
+  
+    background-image: url(../../images/Maskgroup.png);
+    background-color: #FFF3E2  ;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+  
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5vh; 
+    
+  }
+
+
+  .ring {
+    height:400px;
+    width: 400px;
+    border: 10px solid black;
+    border-radius: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    overflow: visible;
+    bottom: -40%;
+    transition: all 1s; 
+  }
+
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    overflow: hidden;
+  }
+} */

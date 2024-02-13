@@ -8,6 +8,8 @@
     flex-wrap: wrap;
     
     background-color: #F79F1E;
+    background-image: url(../images/Yellowpattern1.svg);
+    background-repeat: repeat;
     overflow: hidden;
     padding-top:10vh;
   }

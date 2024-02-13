@@ -29,9 +29,6 @@ function Registration()
             }
         }
         getEventDetails();
-        
-
-        
     },[]);
     return(
         <>

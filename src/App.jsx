@@ -7,6 +7,7 @@ import Countdown from "../sections/Countdown/Countdown"
 import Registration from "../sections/Registration/Registration"
 import Navbar from "../sections/Navbar/Navbar"
 import { BrowserRouter,Route,Routes } from "react-router-dom"
+import Scoreboard from "../sections/Scoreboard/Scoreboard"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Countdown />
         <Events />
         {/* <Registration /> */}
+        <Scoreboard />
 
       
       </>}></Route>

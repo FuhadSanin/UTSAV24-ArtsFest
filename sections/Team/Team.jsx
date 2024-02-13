@@ -15,7 +15,7 @@ const teamMembers = [
 function Team() {
   return (
     <div className="Team">
-      <h1>TEAMS</h1>
+      <h1>MEET THE TEAMS</h1>
       <div className="Teams">
         {teamMembers.map((member, index) => (
           <div key={index} className={`Team-each`}>

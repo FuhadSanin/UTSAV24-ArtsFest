@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const navItems = [
   { id: "home", name: "HOME" },
-  { id: "about", name: "ABOUT" },
+  { id: "team", name: "TEAMS" },
   { id: "events", name: "EVENTS" },
   { id: "scoreboard", name: "SCOREBOARD" },
 ];
@@ -19,7 +19,7 @@ const Navbar = () => {
       window.location.href = "/events";
       return;
     }
-    setCurrentItem(id); 
+    setCurrentItem(id);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -122,17 +122,19 @@ const Navbar = () => {
           )}
         </div>
       )}
-      {isScrolled && <ul className={`navbar ${isOpen ? "open" : ""}`}>
-        {navItems.map((item, index) => (
-          <li
-            key={index}
-            onClick={(event) => handleItemClick(item.id, event)}
-            className={`${isScrolled ? "blur" : ""}`}
-          >
-            {item.name}
-          </li>
-        ))}
-      </ul>}
+      {isScrolled && (
+        <ul className={`navbar ${isOpen ? "open" : ""}`}>
+          {navItems.map((item, index) => (
+            <li
+              key={index}
+              onClick={(event) => handleItemClick(item.id, event)}
+              className={`${isScrolled ? "blur" : ""}`}
+            >
+              {item.name}
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 };

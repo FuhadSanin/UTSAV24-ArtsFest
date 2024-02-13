@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Neohead;
+  src: url(../../font/NeoheadRegular.otf);
+}
+#ScoreBoard {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/set.png");
+  background-color: #f5793b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ScoreBoard h1 {
+  font-size: 50px;
+  padding: 30px;
+}
+.ScoreBoard-Scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  gap: 10px;
+}
+.ScoreBoard-ScoreCard {
+  width: 56vw;
+  height: 10vh;
+  /* background: #000; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 20px;
+}
+.ScoreBoard-MainCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer; */
+  transition: all 0.5s ease-in-out;
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+  backdrop-filter: grayscale(0.1) blur(5px);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
+}
+.ScoreBoard-Details {
+  width: 100%;
+  height: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.ScoreBoard-Details-Container {
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+/* .ScoreBoard-MainCon:hover .ScoreBoard-Details-Container{
+    height: 90px;
+} */
+.ScoreBoard-Scores p {
+  font-family: Neohead;
+}
+
+@media (max-width: 650px) {
+  .ScoreBoard-Scores {
+    width: 95vw;
+  }
+  .ScoreBoard-ScoreCard {
+    width: 90vw;
+  }
+}
+@media (max-width: 425px) {
+  .ScoreBoard-ScoreCard p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

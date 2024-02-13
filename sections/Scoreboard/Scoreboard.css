@@ -17,7 +17,8 @@
     margin-right: auto;
 }
 #ScoreBoard h1{
-    font-size: 50px
+    font-size: 50px;
+    padding: 30px;
 }
 .ScoreBoard-Scores{
     display: flex;
@@ -30,7 +31,7 @@
     width:56vw;
     height: 10vh;
     /* background: #000; */
-    font-family: Neohead;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.5s ease-in-out;
 
     padding-left: 2vw;
@@ -68,9 +69,13 @@
     width: 100%;
     transition: all 0.5s ease-in-out;
 }
-.ScoreBoard-MainCon:hover .ScoreBoard-Details-Container{
+/* .ScoreBoard-MainCon:hover .ScoreBoard-Details-Container{
     height: 90px;
+} */
+.ScoreBoard-Scores p{
+    font-family: Neohead;
 }
+
 @media (max-width:650px)
 {
     .ScoreBoard-Scores{

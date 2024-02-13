@@ -9,6 +9,7 @@ import Navbar from "../sections/Navbar/Navbar"
 import Scoreboard from "../sections/Scoreboard/Scoreboard"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Team from "../sections/Team/Team"
+import Footer from "../sections/Footer/Footer"
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         {/* <Registration /> */}
 
 
-
+        <Footer />
         </>}></Route>
         <Route path="/events" element={<EventsPage />}></Route>
         <Route path="/events/:name" element={<Registration />}></Route>

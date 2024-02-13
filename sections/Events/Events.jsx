@@ -61,7 +61,7 @@ function Events() {
     const carousel = carouselRef.current;
     carousel.addEventListener("wheel", handleWheel);
 
-    intervalId = setInterval(rotateCarousel, 800); // Start rotation interval
+    intervalId = setInterval(rotateCarousel, 1500); // Start rotation interval
 
     return () => {
       carousel.removeEventListener("wheel", handleWheel);

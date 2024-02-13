@@ -6,7 +6,7 @@ import CircularText from "./CircularText"
 const Landing = () => {
   const textRef = useRef(null)
   const words = [" UTSAV. ", " ഉത്സവ്. ", " उत्सव. "]
-  const shuffleInterval = 5000
+  const shuffleInterval = 2000
 
   useEffect(() => {
     const text = Baffle(textRef.current)

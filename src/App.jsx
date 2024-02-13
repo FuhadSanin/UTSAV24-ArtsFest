@@ -7,6 +7,7 @@ import Countdown from "../sections/Countdown/Countdown"
 import Registration from "../sections/Registration/Registration"
 import Navbar from "../sections/Navbar/Navbar"
 import { BrowserRouter,Route,Routes } from "react-router-dom"
+import Team from "../sections/Team/Team"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Landing />
         <Countdown />
+        <Team />
         <Events />
         {/* <Registration /> */}
 

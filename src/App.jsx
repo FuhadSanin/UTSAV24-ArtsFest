@@ -7,11 +7,13 @@ import Countdown from "../sections/Countdown/Countdown"
 import Navbar from "../sections/Navbar/Navbar"
 
 function App() {
+
   return (
     <>
       <Navbar />
       <Landing />
-      <Countdown />
+      < Countdown />
+      <Events />
       <EventsPage />
     </>
   )

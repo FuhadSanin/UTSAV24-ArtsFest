@@ -102,6 +102,7 @@ function EventsPage() {
                     <EventsCard key={item.title} {...item} />
                 ))}
 
+
             </div>
         </div >
     )

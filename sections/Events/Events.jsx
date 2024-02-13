@@ -157,11 +157,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 import React, { useState, useEffect, useRef } from 'react';
 import "./Events.css";
 
 function Events() {
-  const list = ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5', 'Element 6', 'Element 7', 'Element 8', 'Element 9', 'Element 10', 'Element 11', 'Element 12', 'Element 13', 'Element 14', 'Element 15', 'Element 16', 'Element 17', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 26', 'Element 56'];
+  const list = ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5', 'Element 6', 'Element 7', 'Element 8', 'Element 9', 'Element 10', 'Element 11', 'Element 12', 'Element 13', 'Element 14', 'Element 15', 'Element 16', 'Element 17', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 26', 'Element 56'];
 
   const ringRef = useRef(null);
   const carouselRef = useRef(null);
@@ -170,6 +180,9 @@ function Events() {
   let i = 0;
   let j = 0;
   let intervalId = null;
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
 
   const rotateCarousel = (direction) => {
     const ring = ringRef.current;
@@ -204,43 +217,72 @@ function Events() {
     }
   };
 
-
   const rotateCarouselForward = () => {
     rotateCarousel("forward");
   };
-
 
   const rotateCarouselBackward = () => {
     rotateCarousel("backward");
   };
 
+  const handleWheel = (e) => {
+    e.preventDefault(); // Prevent default scroll behavior
+    const deltaY = e.deltaY;
+    if (deltaY > 0) {
+      // Scroll down, rotate carousel forward
+      rotateCarouselForward();
+    } else if (deltaY < 0) {
+      // Scroll up, rotate carousel backward
+      rotateCarouselBackward();
+    }
+
+    rotateCarousel();
+    clearInterval(intervalId); // Reset the rotation interval timer
+    intervalId = setTimeout(() => {
+      intervalId = setInterval(rotateCarouselForward, 1500); // Resume rotation after 1.5 seconds of inactivity
+    }, 2000);
+  };
+
+  const handleTouchStart = (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    const diff = currentX - startX;
+    if (diff > 50) {
+      // Swipe right, rotate carousel backward
+      rotateCarouselBackward();
+      isDragging = false;
+    } else if (diff < -50) {
+      // Swipe left, rotate carousel forward
+      rotateCarouselForward();
+      isDragging = false;
+    }
+  };
+
+  const handleTouchEnd = () => {
+    isDragging = false;
+  };
 
   useEffect(() => {
     const carousel = carouselRef.current;
 
-    const handleWheel = (e) => {
-      e.preventDefault(); // Prevent default scroll behavior
-      const deltaY = e.deltaY;
+    carousel.addEventListener("wheel", handleWheel);
 
-      if (deltaY > 0) {
-        // Scroll down, rotate carousel forward
-        rotateCarouselForward();
-      } else if (deltaY < 0) {
-        // Scroll up, rotate carousel backward
-        rotateCarouselBackward();
-      }
-
-      // Reset the rotation interval timer
-      clearInterval(intervalId);
-      intervalId = setInterval(rotateCarouselForward, 1500); // Resume rotation after 1.5 seconds of inactivity
-    };
-
-    carousel.addEventListener("wheel", handleWheel, { passive: false });
+    carousel.addEventListener("touchstart", handleTouchStart);
+    carousel.addEventListener("touchmove", handleTouchMove);
+    carousel.addEventListener("touchend", handleTouchEnd);
 
     intervalId = setInterval(rotateCarouselForward, 1500); // Start rotation interval
 
     return () => {
       carousel.removeEventListener("wheel", handleWheel);
+      carousel.removeEventListener("touchstart", handleTouchStart);
+      carousel.removeEventListener("touchmove", handleTouchMove);
+      carousel.removeEventListener("touchend", handleTouchEnd);
       clearInterval(intervalId);
     };
   }, []);
@@ -258,9 +300,10 @@ function Events() {
           ))}
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
 export default Events;
+
 

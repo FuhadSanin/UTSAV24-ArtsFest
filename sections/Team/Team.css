@@ -5,6 +5,14 @@
   height: fit;
 }
 
+.Team h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 3%;
+  color: white;
+  font-size: 5vw;
+}
+
 .Teams {
   width: 100%;
   height: fit;
@@ -16,7 +24,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 35px;
   overflow: hidden;
-  padding: 5% 0;
 }
 
 .Team-each {

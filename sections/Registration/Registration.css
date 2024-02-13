@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Neue;
+    src: url(../../font/NeueHaasDisplayThin.ttf);
+  }
+  @font-face {
+    font-family: Neohead;
+    src: url(../../font/NeoheadRegular.otf);
+  }
+
+.Registration-main-container{
+    display: flex;
+    background-color: #EC1B92;
+    background-image: url('../../images/image\ 16.png');
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.Registration-glass-container{
+    display:flex;
+    width: 80vw;
+    height: 80vh;
+
+    border-radius: 10px;
+    backdrop-filter:  blur(10px);
+    box-shadow: 25px -28px 49px -6px rgba(255,255,255,0.45) inset,
+-25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+.Registration-leftside{
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+    color:white;
+    gap:40px;
+    width: 50%;
+}
+.Registration-EventDesc{
+    font-size: larger;
+    font-family: 'Neue', sans-serif;
+}
+.Registration-EventLink{
+    padding: 20px 40px;
+    color:white;
+    text-decoration: none;
+    font-family: 'Neohead';
+    border-radius: 10px;
+    background-color: #EC1B92;
+    width: fit-content;
+    font-size: large;
+    
+}
+.Registration-RightSide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width:1050px)
+{
+    .Registration-RightSide{
+        width: 40%;
+    }
+}
+@media (max-width:900px) {
+    .Registration-EventDesc{
+        font-size: medium;
+    }
+    .Registration-EventLink{
+        padding: 10px 20px;
+        font-size: medium;
+    }
+}
+@media (max-width:650px)
+{
+    .Registration-glass-container{
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Registration-leftside{
+        width: 80%;
+        padding-top: 25px;
+
+        gap: 20px;
+    }
+    .Registration-RightSide{
+        width: 50%;
+
+    }
+}
+@media (max-width:390px) {
+    .Registration-leftside{
+        padding: 25px;
+    }
+}

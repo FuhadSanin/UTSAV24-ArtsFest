@@ -8,25 +8,34 @@
 .Teams {
   width: 100%;
   height: fit;
-  padding: 5% 0;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  overflow: hidden;
+  padding: 5% 0;
 }
 
 .Team-each {
   height: fit;
   width: 500px;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.Team-each img {
   cursor: pointer;
 }
 
-.Team-each:hover {
-  transform: scale(1.05);
-  transition: 0.7s;
+.Team-each img:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .Team-each {
     margin: 0px;
   }

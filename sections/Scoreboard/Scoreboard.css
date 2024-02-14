@@ -29,7 +29,7 @@
 .ScoreBoard-ScoreCard {
   width: 56vw;
   height: 10vh;
-  /* background: #000; */
+ 
 
   display: flex;
   justify-content: space-between;

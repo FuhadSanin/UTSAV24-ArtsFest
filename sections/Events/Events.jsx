@@ -252,14 +252,24 @@ function Events() {
     if (!isDragging) return;
     currentX = e.touches[0].clientX;
     const diff = currentX - startX;
-    if (diff > 50) {
+    if (diff > 20) {
       // Swipe right, rotate carousel backward
       rotateCarouselBackward();
       isDragging = false;
-    } else if (diff < -50) {
+
+      clearInterval(intervalId); // Reset the rotation interval timer
+      intervalId = setTimeout(() => {
+        intervalId = setInterval(rotateCarouselForward, 1500); // Resume rotation after 1.5 seconds of inactivity
+      }, 2000);
+
+    } else if (diff < -20) {
       // Swipe left, rotate carousel forward
       rotateCarouselForward();
       isDragging = false;
+      clearInterval(intervalId); // Reset the rotation interval timer
+      intervalId = setTimeout(() => {
+        intervalId = setInterval(rotateCarouselForward, 1500); // Resume rotation after 1.5 seconds of inactivity
+      }, 2000);
     }
   };
 

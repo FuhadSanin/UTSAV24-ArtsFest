@@ -11,7 +11,7 @@
   text-shadow: 5px 0 #000000, -2px 0 #000000, 0 2px #080808, 0 -2px #000000,
              1px 1px #000000, -1px -1px #000000, 1px -1px #060606, -1px 1px #fff;
 
- color: #ff8903;
+ color: #e9085b;
   font-size: 17vh;
   align-items: center;
   display: flex;
@@ -37,6 +37,7 @@
   width: 70%;
   position:absolute;
   bottom: 0;
+  /* background-color: #000000; */
  
 
 }
@@ -67,7 +68,7 @@
   min-width: 250px;
   height: 40vh;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 18px;
 
   background-image: url(../../images/Maskgroup.png);
   background-color: #FFF3E2  ;
@@ -136,6 +137,261 @@
   transform: rotate(315deg); 
 }
 
+
+
+
+
+
+
+
+@media (max-width: 768px){
+  .ring{
+    height:600px;
+    width:600px;
+  }
+}
+
+
+
+
+@media (max-width: 650px){
+  
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .ring{
+    height:550px;
+    width:550px;
+
+  }
+
+  .scrollcontrol{
+    height: 50%;
+    width: 90%;
+    position:absolute;
+    bottom: 0;
+    /* background-color: #000000; */
+   
+  
+  }
+
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4, 
+  .slide5, 
+  .slide6, 
+  .slide7, 
+  .slide8 {
+    
+    width: fit-content;
+    min-width: 200px;
+    height: 35vh;
+    position: absolute;
+    border-radius: 18px;
+  
+   
+  
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5vh; 
+    
+  }
+}
+
+
+@media (max-width: 450px){
+  
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .ring{
+    height:300px;
+    width:300px;
+
+  }
+
+  .scrollcontrol{
+    height: 50%;
+    width: 90%;
+    position:absolute;
+    bottom: 0;
+    /* background-color: #000000; */
+   
+  
+  }
+
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4, 
+  .slide5, 
+  .slide6, 
+  .slide7, 
+  .slide8 {
+    
+    width: fit-content;
+    min-width: 200px;
+    height: 35vh;
+    position: absolute;
+    border-radius: 18px;
+  
+   
+  
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5vh; 
+    
+  }
+}
+
+
+
+@media (max-width: 540px){
+  
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .ring{
+    height:500px;
+    width:500px;
+
+  }
+
+  .scrollcontrol{
+    height: 50%;
+    width: 90%;
+    position:absolute;
+    bottom: 0;
+    /* background-color: #000000; */
+   
+  
+  }
+
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4, 
+  .slide5, 
+  .slide6, 
+  .slide7, 
+  .slide8 {
+    
+    width: fit-content;
+    min-width: 200px;
+    height: 35vh;
+    position: absolute;
+    border-radius: 18px;
+  
+   
+  
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 5vh; 
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 380px){ 
+ 
+  .carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+ 
+  .ring{
+    height:350px;
+    width:350px;
+
+  }
+  .scrollcontrol{
+    height: 50%;
+    width: 90%;
+    position:absolute;
+    bottom: 0;
+    /* background-color: #000000; */
+   
+  
+  }
+  
+
+  .slide1,
+.slide2,
+.slide3,
+.slide4, 
+.slide5, 
+.slide6, 
+.slide7, 
+.slide8 {
+  
+  width: fit-content;
+  min-width: 200px;
+  height: 35vh;
+  position: absolute;
+  border-radius: 18px;
+
+ 
+
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 5vh; 
+  
+}
+}
 
 
 

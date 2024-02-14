@@ -12,10 +12,13 @@
              1px 1px #000000, -1px -1px #000000, 1px -1px #060606, -1px 1px #fff;
 
  color: #ff8903;
-  font-size: 20vh;
+  font-size: 17vh;
   align-items: center;
   display: flex;
   justify-content: center;
+  padding-top:4vh ;
+
+  
 
 }
 
@@ -30,10 +33,11 @@
 }
 
 .scrollcontrol{
-  height: 40%;
+  height: 50%;
   width: 70%;
   position:absolute;
   bottom: 0;
+ 
 
 }
 
@@ -43,7 +47,7 @@
   border: 10px solid black;
   border-radius: 100%;
   position: relative;
-  z-index: 10;
+
   background-color: transparent;
   overflow: visible;
   bottom: -40%;
@@ -82,15 +86,15 @@
 }
 
 .slide1 {
-  top: -70%;
-  right: 25%;
+  top: -74%;
+  right: 28%;
   transform: rotate(0deg); 
 
 }
 
 .slide2 {
   top: -50%;
-  right: -45%;
+  right: -50%;
   transform: rotate(45deg); 
 
 }
@@ -109,14 +113,14 @@
 
 
 .slide5 {
-  bottom: -70%;
-  right: 25%;
+  bottom: -74%;
+  right: 28%;
   transform: rotate(180deg);
 }
 
 .slide6 {
   bottom: -50%;
-  left: -45%;
+  left: -50%;
   transform: rotate(225deg);
 }
 
@@ -128,7 +132,7 @@
 
 .slide8 {
   top: -50%;
-  left: -45%;
+  left: -50%;
   transform: rotate(315deg); 
 }
 

@@ -1,0 +1,15 @@
+.Soon-Container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #EC1B92;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.Soon-Container p{
+    font-size: 2rem;
+    
+}

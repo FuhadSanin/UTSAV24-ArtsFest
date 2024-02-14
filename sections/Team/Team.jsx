@@ -18,7 +18,7 @@ function Team() {
       <h1>MEET THE TEAMS</h1>
       <div className="Teams">
         {teamMembers.map((member, index) => (
-          <div key={index} className={`Team-each`}>
+          <div key={index} className={`Team-each`} data-aos='fade-up'>
             <img src={member.image} alt={member.name} />
           </div>
         ))}

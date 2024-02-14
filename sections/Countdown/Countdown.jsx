@@ -31,8 +31,8 @@ function Countdown() {
     }, []);
 
     return (
-        <div className="Countdown" id="about">
-            <div className="ctd">
+        <div className="Countdown" id="about" >
+            <div className="ctd" data-aos='fade-up'>
                     <div className="ctd-cont">
                         <p className="ctd-p">{countdown.days}</p>
                         <p className="ctd-cont-p">DAYS</p>

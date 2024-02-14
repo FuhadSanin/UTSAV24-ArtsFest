@@ -4,21 +4,27 @@ import './Scoreboard.css';
 function Scoreboard(){
     const Teams=["PUNJABI HOUSE","CHATTAMBINAADU","THENKASHIPATTANAM","CHOTTA MUMBAI"]
     useEffect(()=>{
-        const fetchData = () => {
-            fetch("https://script.google.com/macros/s/AKfycbxueuyWB7EDA64uftv5DiRTedVNySDPeG_YHNRjvM0zrddydMhO6x9ZaedUMS78fkZm/exec")
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(error => console.log(error))
-        };
+        try{
+
+            const fetchData = () => {
+                fetch("https://script.google.com/macros/s/AKfycbxueuyWB7EDA64uftv5DiRTedVNySDPeG_YHNRjvM0zrddydMhO6x9ZaedUMS78fkZm/exec")
+                    .then(response => response.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.log(error))
+            };
+            fetchData();
+            const interval = setInterval(fetchData, 60000);
+            return () => clearInterval(interval);
+        }
+        catch(e){
+            console.log(e)
+        }
 
         // Call the API initially
-        fetchData();
 
         // Call the API every 1 minute
-        const interval = setInterval(fetchData, 60000);
 
         // Clean up the interval when the component unmounts
-        return () => clearInterval(interval);
     }, [])
     
     return(<>
@@ -28,9 +34,9 @@ function Scoreboard(){
                 {
                     Teams.map((team,index)=>
                     <>
-                        <div className="ScoreBoard-MainCon">
+                        <div className="ScoreBoard-MainCon" key={index} data-aos='fade-up'>
 
-                            <div className="ScoreBoard-ScoreCard">
+                            <div className="ScoreBoard-ScoreCard" key={index} >
                                 <p>{team}</p>
                                 <p>0</p>
                             </div>

@@ -58,7 +58,7 @@ const Landing = () => {
       {/* <div className="circular-ring">
         <CircularText />
       </div> */}
-      <div className="text">
+      <div className="text" data-aos='fade-up'>
         <h1 ref={textRef}></h1>
       </div>
     </div>

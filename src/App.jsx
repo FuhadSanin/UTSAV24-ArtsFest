@@ -10,13 +10,20 @@ import Scoreboard from "../sections/Scoreboard/Scoreboard"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Team from "../sections/Team/Team"
 import Footer from "../sections/Footer/Footer"
+import Soon from "../sections/Soon/Soon"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 function App() {
-
+  Aos.init();
+  const currentTime = new Date();
+  const disableSoon = currentTime.getHours() > 20 || (currentTime.getHours() === 20 && currentTime.getMinutes() >= 40);
+  console.log(currentTime.getHours());
   return (
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<>
+        {disableSoon?null:<Soon/>}
         <Navbar />
         <Landing />
         <Countdown />

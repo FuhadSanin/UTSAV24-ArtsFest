@@ -3,7 +3,7 @@
   height: 12vh;
   background-color: #ec1b92;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .Footer-center {
@@ -24,4 +24,12 @@
   font-size: small;
   font-weight: thin;
   margin-top: 5px;
+}
+.Footer-Logo{
+  width:50px;
+}
+.Footer-CECLogo
+{
+  width: 50px;
+  margin-right: 10px;
 }

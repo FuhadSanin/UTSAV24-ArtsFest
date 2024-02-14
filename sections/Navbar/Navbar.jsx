@@ -122,7 +122,7 @@ const Navbar = () => {
           )}
         </div>
       )}
-      {isScrolled && (
+      {(ismobile || isScrolled) && (
         <ul className={`navbar ${isOpen ? "open" : ""}`}>
           {navItems.map((item, index) => (
             <li

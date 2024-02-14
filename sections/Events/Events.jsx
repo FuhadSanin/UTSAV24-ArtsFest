@@ -266,10 +266,6 @@ function Events() {
       // Swipe left, rotate carousel forward
       rotateCarouselForward();
       isDragging = false;
-      clearInterval(intervalId); // Reset the rotation interval timer
-      intervalId = setTimeout(() => {
-        intervalId = setInterval(rotateCarouselForward, 1500); // Resume rotation after 1.5 seconds of inactivity
-      }, 2000);
     }
   };
 

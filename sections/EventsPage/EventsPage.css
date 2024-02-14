@@ -5,17 +5,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+  
     
     background-color: #F79F1E;
     background-image: url("../../images/set.png");
     background-repeat: repeat;
     overflow: hidden;
-    padding-top:10vh;
+    padding-top:1vh;
+   
   }
 
   .EventsCards-Container{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -26,5 +27,6 @@
   .Event-Heading{
     color: #fff;
     font-size: 15vh;
-    
+    padding-bottom: 6vh;
+  
   }

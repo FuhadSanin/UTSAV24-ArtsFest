@@ -149,29 +149,11 @@
 // //   };
 // // }, []);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect, useRef } from 'react';
 import "./Events.css";
 
 function Events() {
-  const list = ['Element 1', 'Element 2', 'Element 3', 'Element 4', 'Element 5', 'Element 6', 'Element 7', 'Element 8', 'Element 9', 'Element 10', 'Element 11', 'Element 12', 'Element 13', 'Element 14', 'Element 15', 'Element 16', 'Element 17', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 18', 'Element 26', 'Element 56'];
+  const list = ['Actor of CEC', 'Dancer of CEC', 'Voice of CEC', 'Ramp Walk', 'Short Film', 'Short Story', 'Standup Comedy', 'Thiruvathira', 'Vattappaatu', 'Wall Painting', 'Western Solo Song'];
 
   const ringRef = useRef(null);
   const carouselRef = useRef(null);

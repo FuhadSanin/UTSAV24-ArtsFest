@@ -17,7 +17,7 @@ import "aos/dist/aos.css"
 function App() {
   Aos.init();
   const currentTime = new Date();
-  const disableSoon = currentTime.getHours() > 20 || (currentTime.getHours() === 20 && currentTime.getMinutes() >= 40);
+  const disableSoon = currentTime.getHours() > 12 || (currentTime.getHours() === 12 && currentTime.getMinutes() >= 30);
   console.log(currentTime.getHours());
   return (
     <BrowserRouter>

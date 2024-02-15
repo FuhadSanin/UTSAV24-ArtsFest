@@ -3,7 +3,7 @@ export default function Soon()
 {
     return(<>
     <div className="Soon-Container">
-        <p>The site is about to release....</p>
+        <p>Will be released soon....</p>
     </div>
     
     </>)
